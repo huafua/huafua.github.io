@@ -1,0 +1,278 @@
+body{
+    margin: 0;
+}
+body *{
+    font-family: "微软雅黑","calibri";
+}
+body div.home{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-color: white;
+    left: 0;
+    top:0;
+    overflow: auto;
+}
+div.home div.title{
+    height: 30px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background-color: #1181E9;
+}
+div.home div.title span.icon{
+    float: left;
+    margin-left: 0;
+    padding: 0;
+    height: 100%;
+}
+div.home div.title span.icon a img{
+    height:100%;
+    margin-top: -4px;
+}
+div.home div.title span{
+    float: right;
+    line-height: 18px;
+    padding:2px 0;
+    margin:4px 10px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 0.8em;
+}
+body div.home div.content {
+    width: 80%;
+    padding: 10px;
+    margin: 25px auto;
+    overflow: auto;
+}
+body div.home div.content div.post{
+    margin: 5px;
+    padding: 20px;
+    padding-bottom: 10px;
+    /* width: 400px;
+    float: left; */
+    box-shadow: 1px 1px 1px 0 #aaa;
+    background-color: rgb(238, 232, 232);
+    border-radius: 5px;
+    overflow: hidden;
+}
+body div.home div.content div.post div.post-title{
+    background-color: rgb(86, 157, 250);
+    color: #fff;
+    height: 35px;
+    line-height: 35px;
+    font-weight: bolder;
+    text-indent: 20px;
+    margin: -20px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+body div.home div.content div.post div.post-title a{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 0.8em;
+    color: #fff;
+    font-weight: normal;
+}
+body div.home div.content div.post div.post-content ul{
+    list-style-type: none;
+    line-height: 28px;
+    padding: 0;
+}
+body div.home div.content div.post div.post-content ul li{
+    border-bottom: 1px #Ccc dashed;
+    text-indent: 30px;
+    position: relative;
+}
+body div.home div.content div.post div.post-content ul li:hover{
+    background-color: rgb(203, 226, 252);
+
+}
+
+body div.home div.content div.post div.post-content ul li a{
+    display: block;
+    color: #222;
+    width: 80%;
+    height: 28px;
+    overflow: hidden;
+    font-size: 0.8em;
+    text-decoration: none;
+}
+body div.home div.content div.post div.post-content ul li span{
+    position: absolute;
+    font-size: 0.8em;
+    top: 0;
+    right: 5px;
+}
+body div.home div.content div.post div.post-content  ul li span.icon-item{
+    width:12px;
+    height: 12px;;
+    vertical-align: middle;
+    background-color: rgb(189, 192, 194);
+    transform: rotate(45deg);
+    border-radius: 25%;
+    left: 4px;
+    top: 7px;
+}
+body div.login-mask{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+
+}
+body div.login-mask div.mask-title{
+    color: #fff;
+    font-size: 4em;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 150px;
+}
+body div.container{
+    padding:10px;
+    /* margin: 100px auto; */
+    width: 400px;
+    background-color: #dedede;
+    line-height: 40px;
+    overflow: hidden;
+    border-radius: 8px;
+    overflow: hidden;
+    position: absolute;
+    top:35%;
+    left: 35%;
+}
+body div.container div.title{
+    background-color: rgb(17, 124, 211);
+    color: #fff;
+    margin: -10px;
+    margin-bottom:10px;
+    text-indent: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+body div.container div.content{
+    overflow: hidden;
+}
+body div.container div.content div.top{
+    overflow:hidden;
+    margin-top: 10px;
+}
+body div.container div.content div.top div.left{
+    float: left;
+    margin-left: 10px;
+}
+body div.container div.content div.top div.right input{
+    color:#555;
+    font-weight: bolder;
+    height: 30px;;
+    border-radius: 5px;
+    border:1px #ddd solid;
+    margin-left: 5px;
+    text-indent: 4px;
+}
+body div.container div.content div.top div.right{
+    float: right;
+    width: 260px;
+    height: 100px;
+    line-height: 50px;
+    position: relative;
+    overflow: hidden;
+
+}
+body div.container div.content div.top div.left img{
+    display: block;
+    width:100px;
+    height: 100px;
+    border-radius: 10%;
+}
+body div.container div.content div.top div.right input[type="file"]{
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    filter: filter(opacity=0);
+}
+body div.container div.content div.bottom{
+    text-align: center;
+    margin-top: 10px;
+}
+body div.container div.content div.bottom input{
+    height: 30px;
+    width: 200px;
+}
+
+div.content-top{
+    height: 30px;
+    font-size: 0.8em;
+    background-color: rgb(17, 129, 233);
+}
+div.content-top span{
+    display: inline-block;
+    padding: 0 10px;
+    color: #fff;
+    height: 100%;
+    line-height: 30px;
+    cursor: pointer;
+    float: right;
+}
+div.content-top span:hover{
+    background-color: rgb(27, 141, 235);
+}
+div.content-top span img{
+    height: 100%;
+}
+div.content-top span.icon{
+    float: left;
+    margin-left: 0;
+    padding: 0;
+}
+div.content-middle{
+    width: 1400px;
+    margin: 10px auto;
+}
+div.content-middle table{
+    width: 100%;
+    line-height: 40px;
+}
+div.content-middle table tr td{
+    padding: 10px;
+    text-align: center;
+    width: 25%;
+}
+div.content-middle table tr td a{
+    text-decoration: none;
+    color:#333;
+}
+div.content-middle table tr td a:hover{
+    color: #333;
+}
+div.content-middle table tr td div.item{
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    margin: auto;
+    /* border-top-right-radius: 10px; */
+    /* border-top-left-radius: 10px; */
+    border-radius: 10px;
+    font-weight: bolder;
+    background-color: #efefef;
+    box-shadow: 3px 3px 1px 0 #aaa;
+    padding: 5px;
+    border:1px #aaa solid;
+}
+div.content-middle table tr td div.item div{
+    line-height: 40px;
+    border-top: 1px #bbb solid;
+}
+div.content-middle table tr td div.item img{
+    width: 100%;
+    height: 290px;
+    border-radius: 10px;
+}
