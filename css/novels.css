@@ -19,3 +19,40 @@ i.icon{
     background-color: red;
     color:white;
 }
+div.panel{
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    box-sizing:border-box;
+}
+div.panel div.titlebar{
+    height:40px;
+    text-align: center;
+    line-height: 40px;
+    background-color: #333;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+}
+div.panel div.btnback{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: rgb(238, 238, 238);
+    color: rgb(122, 120, 120);
+    position: absolute;
+    font-weight: bolder;
+    left: 0;
+    top: 0;
+    font-size:1.2em;
+}
+div.panel div.content{
+    margin-top: 30px;
+    padding: 10px;
+    height: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
