@@ -1,36 +1,72 @@
+body{
+    margin: 0;
+}
+div.novel_home{
+    position: fixed;
+    height: 40px;
+    width: 100%;
+    z-index: 2;
+    line-height: 44px;
+    background-color: rgb(7, 46, 119);
+    font-weight: bolder;
+    color: #fff;
+    text-align: center;
+    left: 0;
+    top: 0;
+}
+div#container{
+    margin-top: 44px;
+}
+div.item-wrapper{
+    position: relative;
+    line-height: 30px;
+    margin: 4px 0;
+    border-bottom: 1px #ddd dashed;
+}
+div.item-wrapper:hover{
+    background-color: rgb(221, 241, 240);
+}
 a.novel_item{
     display: block;
     height: 30px;
     line-height: 30px;
     text-decoration: none;
-    margin: 4px 0;
     color: #333;
-    margin-left: 40px;
+    margin-left: 30px;
 }
 i.icon{
     height: 30px;
-    width: 30px;
+    width: 40px;
     line-height: 30px;
     text-align: center;
+    background: url("../images/ebook.png") no-repeat;
+    background-size: 30px;
     position: absolute;
     left: 0;
     top: 0;
     border-radius: 25%;
-    background-color: red;
+    font-weight: bolder;
+    font-family: "calibri";
+    font-style: normal;
+    /* background-color: rgb(82, 114, 255); */
     color:white;
 }
 div.panel{
+    width: 100%;
     position: fixed;
     background-color: #fff;
     top: 0;
     left: 0;
+    z-index: 3;
     box-sizing:border-box;
+    /* margin-right: -10px; */
 }
 div.panel div.titlebar{
     height:40px;
     text-align: center;
-    line-height: 40px;
-    background-color: #333;
+    line-height: 44px;
+    font-weight: bolder;
+    background-color: rgb(7, 46, 119);
     color: #fff;
     position: absolute;
     width: 100%;
@@ -40,13 +76,17 @@ div.panel div.btnback{
     height: 40px;
     line-height: 40px;
     text-align: center;
-    background-color: rgb(238, 238, 238);
-    color: rgb(122, 120, 120);
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    background:url("../images/left-arrow.png") no-repeat;
+    background-size: 20px 20px;
+    background-position: 10px 10px;
     position: absolute;
     font-weight: bolder;
     left: 0;
     top: 0;
-    font-size:1.2em;
+    font-size:1.5em;
 }
 div.panel div.content{
     margin-top: 30px;
