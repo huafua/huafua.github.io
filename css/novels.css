@@ -95,4 +95,5 @@ div.panel div.content{
     overflow-y: auto;
     overflow-x: hidden;
     box-sizing: border-box;
+    padding-bottom: 30px;
 }

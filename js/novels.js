@@ -21,8 +21,8 @@ http.onreadystatechange=function(){
                             if(this.status==200){
                                 var panel=document.createElement("div");
                                 panel.className="panel";
-                                panel.style.width=document.body.clientWidth+"px";
-                                panel.style.height=document.body.clientHeight+"px";
+                                panel.style.width=document.documentElement.clientWidth+"px";
+                                panel.style.height=document.documentElement.clientHeight+"px";
                                 var titlebar=document.createElement("div");
                                 titlebar.innerText=novel.split(".")[0];
                                 titlebar.className="titlebar";
@@ -37,7 +37,7 @@ http.onreadystatechange=function(){
                                 var content=document.createElement("div");
                                 content.innerHTML=this.responseText.replace(/null/g,"");
                                 content.className="content";
-                                content.style.height=document.body.clientHeight-titlebar.offsetHeight+"px";
+                                content.style.height=document.documentElement.clientHeight-titlebar.offsetHeight+"px";
                                 panel.appendChild(titlebar);
                                 panel.appendChild(content);
                                 document.body.appendChild(panel);
