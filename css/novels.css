@@ -1,0 +1,21 @@
+a.novel_item{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    text-decoration: none;
+    margin: 4px 0;
+    color: #333;
+    margin-left: 40px;
+}
+i.icon{
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 25%;
+    background-color: red;
+    color:white;
+}
